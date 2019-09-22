@@ -1,0 +1,2 @@
+class SpisokOfName < ApplicationRecord
+end
