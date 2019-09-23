@@ -8,20 +8,18 @@ class MainPageController < ApplicationController
   def createSpisok
     @newSpisok = SpisokOfName.create(spisok_params)
     @newSpisok.save
-
     ApplicationMailer.send_mailer(@newSpisok.names)
     redirect_to root_path
   end
 
   def createEmail
     if Email.where(:email => email_params[:email]) != []
-      logger.debug ("\n" + "Эта почта уже есть в БД" + "\n")
+      flash[:error_email] = "Данная почта уже существует в базе!"
     else
       @newEmail = Email.create(email_params)
-      @newEmail.save
-    end
-    
-    redirect_to root_path
+      @newEmail.save      
+    end    
+    redirect_to root_path  
   end
 
   def spisok_params

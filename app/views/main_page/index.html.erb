@@ -1,4 +1,7 @@
 
+<% if flash[:error_email] %>
+    <div class="notice"><%= flash[:error_email] %></div>
+<% end %>
 
 <%= render 'create_spisok' %>
 <%= render 'create_email' %>
