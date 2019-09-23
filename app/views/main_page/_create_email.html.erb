@@ -1,0 +1,8 @@
+<div class="create_email">
+    <%= form_for :newEmail, id:'form_create_email', :url => {:action => "createEmail"} do |createEmail| %>
+      <%= createEmail.text_field :name, placeholder: "Рома" %><br />
+      <%= createEmail.text_field :secondName, placeholder: "Оганов" %><br />
+      <%= createEmail.text_field :email, placeholder: "example@mail.com" %><br />
+      <%= createEmail.submit "Добавить", class: "submit_sent"%>
+    <%end%>
+</div>
