@@ -1,4 +1,10 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
-  layout 'mailer'
+  default from: 'person_write@list.ru'
+  #layout 'mailer'
+
+  def mailer()
+    mail( :to => 'list_all@list.ru',
+    :subject => 'Список кому не плевать' )
+  end
+
 end
