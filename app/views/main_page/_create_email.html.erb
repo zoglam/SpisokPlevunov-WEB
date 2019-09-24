@@ -1,3 +1,7 @@
+<% if flash[:error_email] %>
+    <div class="error_email"><%= flash[:error_email] %></div>
+<% end %>
+
 <div class="create_email">
     <%= form_for :newEmail, id:'form_create_email', :url => {:action => "createEmail"} do |createEmail| %>
       <%= createEmail.text_field :name, placeholder: "Рома" %><br />

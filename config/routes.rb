@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   post 'main_page/createSpisok'
   post 'main_page/createEmail'
+  post 'main_page/deleteEmail'
 
   resources :main_page
 end

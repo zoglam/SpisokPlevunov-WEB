@@ -22,12 +22,21 @@ class MainPageController < ApplicationController
     redirect_to root_path  
   end
 
+  def deleteEmail
+    @deleteEmail = Email.destroy(email_params_forDelete[:id])    
+    redirect_to root_path      
+  end
+
   def spisok_params
     params.require(:newSpisok).permit(:names)
   end
 
   def email_params
     params.require(:newEmail).permit(:name, :secondName, :email)
+  end
+
+  def email_params_forDelete
+    params.require(:deleteEmail).permit(:id)
   end
 
 end

@@ -1,9 +1,13 @@
 <div class="show_email">
-<% @emails.each do |email| %>
-<p>
-<%= email.name %>
-<%= email.secondName %>
-<%= email.email %>
-</p>
-<% end %>
+  <% @emails.each do |email| %>
+    <p>
+      <%= email.name %>
+      <%= email.secondName %>
+      <%= email.email %>
+      <%= form_for :deleteEmail, id:'form_delete_email', :url => {:action => "deleteEmail"} do |deleteEmail| %>
+        <%= deleteEmail.hidden_field :id, :value => email.id %>
+        <%= deleteEmail.submit "Удалить", class: "submit_delete_email"%>
+      <%end%>
+    </p>
+  <% end %>
 </div>
