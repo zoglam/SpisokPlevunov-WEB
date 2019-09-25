@@ -29,6 +29,19 @@ header {
   margin-bottom: 15px;
 }
 
+.main_body{
+  width: 1200px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer{
+  width: 1200px;  
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(0,0,0,0.7);
+}
+
 .nav_bar {
   width: 1200px;
   height: 165px;
@@ -76,6 +89,39 @@ header {
 
 .italic-logo-name{
   font-size: 15px;
+}
+
+.parent_show_email{
+  text-align: center;
+  vertical-align: top;
+  width: 15%;
+  background: grey;
+}
+
+.show_email{
+  margin-top: 10px;
+  text-overflow: ellipsis;
+}
+
+.bnt-show-email{
+  white-space: nowrap;
+  overflow: hidden;
+  background: rgb(255, 94, 0); 
+  text-overflow: ellipsis;
+}
+
+.show_spisok{
+  padding: 10px;
+}
+
+.bnt-show-email{
+  max-width: 170px;
+  min-width: 170px;
+  margin-bottom: 10px;
+}
+
+.parent_show_spisok{
+  background: black;
 }
 
 @media (max-width: 1200px) {

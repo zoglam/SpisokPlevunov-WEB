@@ -1,25 +1,25 @@
 #nav-blue {
-  background: blue;
+  background: #3C80EE;
 }
 
 #nav-green {
-  background: green;
+  background: #5AA518;
 }
 
 #nav-yellow {
-  background: yellow;
+  background: #D1AC26;
 }
 
 #nav-purple {
-  background: purple;
+  background: #5132AB;
 }
 
 #nav-red {
-  background: red;
+  background: #D24725;
 }
 
 #nav-pink {
-  background: pink;
+  background: #AB338F;
 }
 
 header nav a:hover {

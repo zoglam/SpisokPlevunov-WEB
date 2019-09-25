@@ -1,5 +1,13 @@
 <%= render 'header' %>
-<%= render 'create_spisok' %>
-<%= render 'create_email' %>
-<%= render 'show_email' %>
-<%= render 'show_spisok' %>
+<section class="main_body">
+  <table width="100%" border="1">
+  <td class="parent_show_email"><%= render 'show_email' %></td>
+  <td class="parent_show_spisok"><%= render 'show_spisok' %></td>
+</table>
+  <div class="parent_create_spisok"><%= render 'create_spisok' %></div>
+  <div class="parent_create_email"><%= render 'create_email' %></div>
+</section>
+
+<footer>
+  <div>dd</div>
+</footer>
