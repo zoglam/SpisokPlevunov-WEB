@@ -1,5 +1,7 @@
 <div class="show_spisok">
+  <% @i = 1 %>
   <% @spisokofnames.each do |spisokofname| %>
-  <p>Список: <%= spisokofname.names %>.</p>
+  <p class="elements_spisok" id="element_spisok_<%= @i %>">Список: <%= spisokofname.names %>.</p>
+  <% @i += 1 %>
   <% end %>
 </div>

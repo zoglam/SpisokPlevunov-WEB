@@ -1,13 +1,17 @@
 <%= render 'header' %>
 <section class="main_body">
-  <table width="100%" border="1">
+  <table>
   <td class="parent_show_email"><%= render 'show_email' %></td>
-  <td class="parent_show_spisok"><%= render 'show_spisok' %></td>
+  <td class="parent_show_spisok">  
+    <img class="slide_1" src="/assets/slide_1.jpg" />  
+    <%= render 'show_spisok' %>
+  </td>
 </table>
-  <div class="parent_create_spisok"><%= render 'create_spisok' %></div>
-  <div class="parent_create_email"><%= render 'create_email' %></div>
 </section>
 
 <footer>
   <div>dd</div>
 </footer>
+
+<div class="parent_create_spisok"><%= render 'create_spisok' %></div>
+<div class="parent_create_email"><%= render 'create_email' %></div>

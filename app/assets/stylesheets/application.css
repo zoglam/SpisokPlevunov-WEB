@@ -42,6 +42,10 @@ footer{
   background: rgb(0,0,0,0.7);
 }
 
+table{
+  width: 100%;
+}
+
 .nav_bar {
   width: 1200px;
   height: 165px;
@@ -94,13 +98,7 @@ footer{
 .parent_show_email{
   text-align: center;
   vertical-align: top;
-  width: 15%;
-  background: grey;
-}
-
-.show_email{
-  margin-top: 10px;
-  text-overflow: ellipsis;
+  width: 16%;
 }
 
 .bnt-show-email{
@@ -111,34 +109,60 @@ footer{
 }
 
 .show_spisok{
-  padding: 10px;
+  padding: 10px 0px 0px 0px;
+  max-width: 1px;
+  min-width: 100%;
 }
 
 .bnt-show-email{
-  max-width: 170px;
-  min-width: 170px;
+  border-radius: 0;
+  max-width: 10px;
+  min-width: 100%;
   margin-bottom: 10px;
+  height: 75px;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+.elements_spisok {
+  background: purple;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 0 0 0 10px;
+  text-overflow: ellipsis;  
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .parent_show_spisok{
-  background: black;
+  padding-left: 0.75%;
+}
+
+.slide_1{
+  width: 100%;
+  height: 400px;
 }
 
 @media (max-width: 1200px) {
-  .nav_bar {
+
+  .nav_bar, .main_body, footer {
     width: 992px;
   }
 
 }
 
 @media (max-width: 992px) {
-  .nav_bar {
+  .nav_bar, .main_body, footer {
     width: 768px;
   }
 }
 
 @media (max-width: 768px) {
-  .nav_bar {
+  .nav_bar, .main_body, footer {
     width: 576px;
   }
 }
