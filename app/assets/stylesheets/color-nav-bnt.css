@@ -1,0 +1,28 @@
+#nav-blue {
+  background: blue;
+}
+
+#nav-green {
+  background: green;
+}
+
+#nav-yellow {
+  background: yellow;
+}
+
+#nav-purple {
+  background: purple;
+}
+
+#nav-red {
+  background: red;
+}
+
+#nav-pink {
+  background: pink;
+}
+
+header nav a:hover {
+  opacity:0.7;
+}
+

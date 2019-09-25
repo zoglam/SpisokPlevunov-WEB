@@ -13,3 +13,86 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  color: #fff;
+}
+
+body {
+  background: url("main_background.jpg") repeat;
+  background-size: 400px 150px;
+  margin-top: 25px;
+  background-color: #000;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+.nav_bar {
+  width: 1200px;
+  height: 165px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.nav_bar a {
+  border-radius: 0;
+  width: 16%;
+  height: 75px;
+  line-height: 65px;
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;    
+  text-align: center;
+  text-align-last: center;
+}
+
+.nav_bar a:hover {
+  color: #fff;
+}
+
+.nav_bar div {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 75px;
+}
+
+.logo-name {
+  float: right;
+  height: 75px;
+  line-height: 75px;
+  font-size: 25px;
+  line-height: 1;
+  text-align: right;
+  text-align-last: right;
+}
+
+.italic-logo-name{
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .nav_bar {
+    width: 992px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .nav_bar {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_bar {
+    width: 576px;
+  }
+}
