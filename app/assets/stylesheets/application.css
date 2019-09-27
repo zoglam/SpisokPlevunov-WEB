@@ -46,6 +46,11 @@ table{
   width: 100%;
 }
 
+.col-sm{
+  padding-left: 0.75%;
+  padding-right: 0px;
+}
+
 .nav_bar {
   width: 1200px;
   height: 165px;
@@ -124,6 +129,10 @@ table{
   font-size: 20px;
 }
 
+.container{
+  max-width: 1200px;
+}
+
 .elements_spisok {
   background: purple;
   height: 50px;
@@ -139,7 +148,7 @@ table{
 }
 
 .parent_show_spisok{
-  padding-left: 0.75%;
+  padding-left: 1%;
 }
 
 .slide_1{
