@@ -8,11 +8,11 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'duktape'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.3.1'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '<= 1.1.0', require: false
