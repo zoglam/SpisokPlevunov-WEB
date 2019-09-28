@@ -194,6 +194,10 @@ table {
   box-shadow: 0 8px 15px 1px rgba(0, 0, 0, 0.4);
 }
 
+.submit_sent:hover{
+  opacity:0.9;
+}
+
 .create_email{
   height: 400px;
   z-index: 5;
@@ -230,12 +234,21 @@ table {
   background: rgb(0, 0, 0, 0.7);
 }
 
+.input_data{
+position: absolute;
+top: 25px;
+}
+
 @media (max-width: 1200px) {
 
   .nav_bar,
   .main_body,
   footer {
     width: 992px;
+  }
+
+  .input_data{
+    zoom: 0.2;
   }
 
 }
