@@ -1,6 +1,7 @@
 <div class="create_spisok">
+    <p class="description_new_spisok">СОЗДАНИЕ НОВОГО СПИСКА</p>
     <%= form_for :newSpisok, id:'form_create_spisok', :url => {:action => "createSpisok"} do |createSpisok| %>
-      <%= createSpisok.text_field :names, placeholder: "Рома, Саня..." %><br />
-      <%= createSpisok.submit "Отправить", class: "submit_sent"%>
+      <%= createSpisok.text_field :names, placeholder: "Рома, Саня...", class:"input_place" %><br />
+      <%= createSpisok.submit "Создать и отправить", class: "submit_sent"%>
     <%end%>
 </div>

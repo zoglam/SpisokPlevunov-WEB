@@ -3,10 +3,11 @@
 <% end %>
 
 <div class="create_email">
+    <p class="description_new_spisok">БАЗА РАССЫЛКИ</p>
     <%= form_for :newEmail, id:'form_create_email', :url => {:action => "createEmail"} do |createEmail| %>
-      <%= createEmail.text_field :name, placeholder: "Рома" %><br />
-      <%= createEmail.text_field :secondName, placeholder: "Оганов" %><br />
-      <%= createEmail.text_field :email, placeholder: "example@mail.com" %><br />
+      <%= createEmail.text_field :name, placeholder: "Имя", class:"input_place" %><br />
+      <%= createEmail.text_field :secondName, placeholder: "Фамилия", class:"input_place" %><br />
+      <%= createEmail.text_field :email, placeholder: "example@mail.com", class:"input_place" %><br />
       <%= createEmail.submit "Добавить", class: "submit_sent"%>
     <%end%>
 </div>
