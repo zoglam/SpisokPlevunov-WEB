@@ -16,6 +16,7 @@
 
 * {
   color: #fff;
+  
 }
 
 body {
@@ -160,6 +161,7 @@ table {
 
 .create_spisok {
   height: 300px;
+  background: radial-gradient(50% 50%,#d45738,#d24725); 
   box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -195,26 +197,37 @@ table {
 .create_email{
   height: 400px;
   z-index: 5;
+  background: radial-gradient(50% 50%,#3d218d,#5132AB);  
   box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);  
+}
+
+.create_email .submit_sent{
+  background: #AB338F;
+  border-color: #AB338F;
+}
+
+.create_email .input_place{
+  background: #5f44af;
+  border-color: #5f44af;
 }
 
 .create_email, .create_spisok{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 230px;
-  background: radial-gradient(50% 50%,#d45738,#d24725);  
+  margin-top: 230px;   
   width: 600px;  
   text-align: center;  
   padding: 50px;
 }
 
 .parent_create_spisok, .parent_create_email{
-  position: relative;
+  position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
   margin-top: -25px;  
   z-index: 5;
-  background: rgb(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0, 0.7);
 }
 
 @media (max-width: 1200px) {

@@ -18,19 +18,24 @@
 
 $(document).ready(function() {
 
-
   $('.isDisabled').click(function(e) {
-    e.preventDefault();
-
-    $("#nav-purple").onclick(function(){
-      alert("dw")
-    });
-  
-    $("#nav-red").onclick(function(){
-      alert("dw")
-    });
+    e.preventDefault();    
   });
 
+  $("#nav-purple").click(function(){
+    $(".parent_create_email").css({"display":"block"})
+  });
+
+  $("#nav-red").click(function(){
+    $(".parent_create_spisok").css({"display":"block"})
+  });
+
+  $(".parent_create_spisok, .parent_create_email").click(function(e){    
+    if (e.target == this) {
+    $(this).css({"display":"none"});
+    }
+  });
+    
   
 
 });
