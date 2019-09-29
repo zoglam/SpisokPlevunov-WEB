@@ -1,7 +1,7 @@
 class MainPageController < ApplicationController
 
   def index
-    @spisokofnames = SpisokOfName.all.order(:id).where('created_at > ?', 24.hour.ago)
+    @spisokofnames = SpisokOfName.last(5).reverse
     @emails = Email.all.order(:id)
   end
 
