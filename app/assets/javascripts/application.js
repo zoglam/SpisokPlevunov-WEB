@@ -18,6 +18,19 @@
 
 $(document).ready(function() {
 
+
+  var arr_spisok = ['#element_spisok_1', 
+    '#element_spisok_2',
+    '#element_spisok_3',
+    '#element_spisok_4',
+    '#element_spisok_5']
+
+  $.each(arr_spisok, function(index, value){
+    $(value).css({"background": '#5f44' + (Math.random().toString(16) + '00').substring(6,8).toUpperCase()})
+  });
+
+
+
   $('.isDisabled').click(function(e) {
     e.preventDefault();    
   });
