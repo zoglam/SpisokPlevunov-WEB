@@ -1,7 +1,7 @@
 class MainPageController < ApplicationController
 
   def index
-    @spisokofnames = SpisokOfName.all.order(:id)
+    @spisokofnames = SpisokOfName.all.order(:id).where('created_at > ?', 24.hour.ago)
     @emails = Email.all.order(:id)
   end
 
@@ -17,9 +17,9 @@ class MainPageController < ApplicationController
       flash[:error_email] = "Данная почта уже существует в базе!"
     else
       @newEmail = Email.create(email_params)
-      @newEmail.save      
-    end    
-    redirect_to root_path  
+      @newEmail.save 
+      redirect_to root_path      
+    end
   end
 
   def deleteEmail
