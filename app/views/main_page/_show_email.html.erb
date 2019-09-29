@@ -2,14 +2,19 @@
   <% @emails.each do |email| %>
       <details>
        <summary class="btn btn-danger boxed-action bnt-show-email" role="botton"><%= email.email %> </summary>
-        <details-dialog>
-        <%= email.name %>
-        <%= email.secondName %>
-        <%= email.email %>
+        <details-dialog class="details_email">
+        <div class="child_details_email">
+        <p class="info_for_form">Имя</p>
+        <p class="info_email"><%= email.name %></p>
+        <p class="info_for_form">Фамилия</p>
+        <p class="info_email"> <%= email.secondName %></p>
+        <p class="info_for_form">Почта</p>
+        <p class="info_email"><%= email.email %></p>
           <%= form_for :deleteEmail, id:'form_delete_email', :url => {:action => "deleteEmail"} do |deleteEmail| %>
             <%= deleteEmail.hidden_field :id, :value => email.id %>
             <%= deleteEmail.submit "Удалить", class: "submit_delete_email"%>
           <%end%>
+          </div>
         </details-dialog>
       </details>    
   <% end %>

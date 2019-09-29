@@ -35,6 +35,12 @@ $(document).ready(function() {
     $(this).css({"display":"none"});
     }
   });
+
+  $(".details_email").click(function(e){
+    if (e.target == this) {
+    $('details').not(this).removeAttr("open"); 
+    }
+  });
     
   
 
